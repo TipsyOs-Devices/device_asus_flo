@@ -33,6 +33,9 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 TARGET_KERNEL_SOURCE := kernel/asus/flo
 TARGET_KERNEL_CONFIG := slim_flo_defconfig
 
+# Build with Oracle Java.  OpenJDK is crash-o-matic under heavy loading
+ORACLE_JDK7 := true
+
 BOARD_USES_ALSA_AUDIO:= true
 BOARD_USES_LEGACY_ALSA_AUDIO:= false
 BOARD_USES_FLUENCE_INCALL := true
